@@ -4,7 +4,7 @@ import GameBoard from './Board'
 export default class Game extends Component {
 	render() {
 		return <div className="game">
-			<h2 style="text-align:center">Tic Tac Toe</h2>
+			<p>Tic Tac Toe</p>
 			<GameBoard />
 		</div>
 	}

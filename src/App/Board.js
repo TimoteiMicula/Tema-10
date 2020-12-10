@@ -55,7 +55,8 @@ export default class Board extends Component {
 	render() {
 		return <div className="board">
 			
-			<span>{this.state.win != '' ? "Winner is: " + this.state.win : ""} </span>
+		
+		
 			
 			{
 				this.state.squares.map(
@@ -64,6 +65,7 @@ export default class Board extends Component {
 						onSquareClick={() => this.onSquareClick(index)}
 					/>)
 			}
+				<p>{this.state.win != '' ? "Winner is: " + this.state.win : ""} </p>
 			
 		</div>
 	}
